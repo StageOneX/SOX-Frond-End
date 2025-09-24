@@ -1,0 +1,48 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: #0d0d2b;
+  color: white;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.hero-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.hero-actions input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.subscribe {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+}
+
+.contact {
+  background: #222;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+}
