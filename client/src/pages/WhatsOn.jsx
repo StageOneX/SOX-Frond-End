@@ -1,20 +1,59 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./WhatsOn.css";
 
 const WhatsOn = () => {
+  const events = [
+    {
+      id: 1,
+      title: "Wayamba Expo 2026",
+      status: "Ongoing",
+      date: "15th AUG 2026",
+      venue: "Kurunegala Exhibition Center",
+      price: 500,
+      currency: "LKR",
+    },
+    {
+      id: 2,
+      title: "MedEx Expo 2025",
+      status: "Upcoming",
+      date: "21st SEP 2025",
+      venue: "Colombo BMICH",
+      price: 800,
+      currency: "LKR",
+    },
+    {
+      id: 3,
+      title: "Kings & Queens Wedding Expo",
+      status: "Upcoming",
+      date: "11th AUG 2026",
+      venue: "Kandy City Center",
+      price: 600,
+      currency: "LKR",
+    },
+  ];
+
   return (
     <div className="WhatsOn-page">
       <Navbar />
       <section className="WhatsOn-section">
         <h1>What's On</h1>
         <p>Check out all the ongoing and upcoming events happening now.</p>
+
         <div className="WhatsOn-list">
-          <div className="WhatsOn-item">Ongoing Event 1</div>
-          <div className="WhatsOn-item">Upcoming Event 2</div>
-          <div className="WhatsOn-item">Upcoming Event 3</div>
+          {events.map((e) => (
+            <div key={e.id} className="WhatsOn-item">
+              <h3>{e.title}</h3>
+              <p><strong>Status:</strong> {e.status}</p>
+              <p><strong>Date:</strong> {e.date}</p>
+              <p><strong>Venue:</strong> {e.venue}</p>
+              <p>
+                <strong>Price:</strong> {e.price} {e.currency}
+              </p>
+              <button className="btn-details">View Details</button>
+            </div>
+          ))}
         </div>
       </section>
       <Footer />

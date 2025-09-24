@@ -4,6 +4,7 @@ import { AppProvider } from "./context/AppContext";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Events from "./pages/Events";
+import Tickets from "./pages/Tickets";
 import WhatsOn from "./pages/WhatsOn";
 
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/Events" element={<Events />} />
           <Route path="/Tickets" element={<Tickets />} />
           <Route path="/WhatsOn" element={<WhatsOn />} />
+      
         </Routes>
       </Router>
     </AppProvider>

@@ -1,28 +1,124 @@
+/* Whole Home Page */
 .home {
-  background: #0b0b17;
-  color: #ffffff;
+  background: linear-gradient(180deg, #0a0f2c, #1c1f3b);
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Section Wrapper */
 .section {
-  padding: 80px 0;
+  padding: 60px 10%;
   text-align: center;
 }
 
 .section-title {
   font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  color: #39a0ff;
   text-transform: uppercase;
-  position: relative;
-  display: inline-block;
+  letter-spacing: 1px;
 }
 
-.section-title::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, #06b6d4, #3b82f6);
-  margin: 10px auto 0;
-  border-radius: 5px;
+.section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #cfcfcf;
+}
+
+/* 🔹 Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Event Card */
+.event-card {
+  background: #1e223f;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Event Image */
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Event Title */
+.event-card h3 {
+  font-size: 1.3rem;
+  margin: 15px;
+  color: #fff;
+}
+
+/* Event Date */
+.event-card p {
+  margin: 0 15px 10px;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+/* Event Price */
+.event-card span {
+  display: inline-block;
+  margin: 0 15px 15px;
+  font-weight: bold;
+  color: #39a0ff;
+}
+
+/* Stats Section */
+.section .stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Testimonials Section */
+.section.testimonials {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 60px 10%;
+}
+
+/* Partners Section */
+.section.partners {
+  padding: 60px 5%;
+}
+
+.section.partners img {
+  max-width: 150px;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.section.partners img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .event-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .event-card p {
+    font-size: 0.85rem;
+  }
 }

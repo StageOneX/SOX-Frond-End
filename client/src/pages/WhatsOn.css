@@ -1,35 +1,59 @@
-.WhatsOn-section {
-  padding: 100px 20px;
-  text-align: center;
+.WhatsOn-page {
+  background: linear-gradient(180deg, #0a0f2c, #1c1f3b);
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
-.WhatsOn-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #3b82f6;
+.WhatsOn-section {
+  padding: 60px 10%;
+  text-align: center;
 }
 
 .WhatsOn-list {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .WhatsOn-item {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  color: #fff;
-  transition: transform 0.3s;
+  background: #1e223f;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .WhatsOn-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.6);
 }
-.WhatsOn-section {
-  padding: 80px 20px;
-  text-align: center;
+
+.WhatsOn-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #39a0ff;
+}
+
+.WhatsOn-item p {
+  margin: 5px 0;
+  color: #cfcfcf;
+}
+
+.btn-details {
+  margin-top: 12px;
+  padding: 8px 18px;
+  background: #39a0ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-details:hover {
+  background: #2b7fcc;
 }
