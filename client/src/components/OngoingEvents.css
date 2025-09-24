@@ -1,33 +1,38 @@
-.upcoming-events {
+.ongoing-events {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.upcoming-events .event-card {
+.event-card {
   background: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
-  width: 280px;
+  width: 300px;
   transition: transform 0.3s;
 }
 
-.upcoming-events img {
+.event-card img {
   width: 100%;
-  height: 170px;
+  height: 180px;
   object-fit: cover;
 }
 
-.upcoming-events .event-card:hover {
+.event-card:hover {
   transform: translateY(-5px);
 }
 
-.upcoming-events .event-info {
+.event-info {
   padding: 15px;
 }
 
-.upcoming-events .event-info span {
+.event-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.event-info span {
   color: #3b82f6;
   font-weight: bold;
 }

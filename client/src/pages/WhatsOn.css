@@ -1,0 +1,35 @@
+.WhatsOn-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.WhatsOn-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3b82f6;
+}
+
+.WhatsOn-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.WhatsOn-item {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.WhatsOn-item:hover {
+  transform: translateY(-5px);
+}
+.WhatsOn-section {
+  padding: 80px 20px;
+  text-align: center;
+}

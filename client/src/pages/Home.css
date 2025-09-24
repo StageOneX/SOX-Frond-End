@@ -1,0 +1,28 @@
+.home {
+  background: #0b0b17;
+  color: #ffffff;
+}
+
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  margin: 10px auto 0;
+  border-radius: 5px;
+}

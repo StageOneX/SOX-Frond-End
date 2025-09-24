@@ -1,0 +1,23 @@
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 2.5rem;
+  color: #3b82f6;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
