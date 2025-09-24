@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./UpcomingEvents.css";
 
 const UpcomingEvents = () => {
@@ -9,14 +10,14 @@ const UpcomingEvents = () => {
   ];
 
   return (
-    <div className="upcoming-events">
-      {events.map((event, index) => (
-        <div className="event-card" key={index}>
-          <img src={event.img} alt={event.title} />
-          <div className="event-info">
-            <h3>{event.title}</h3>
-            <p>{event.date}</p>
-            <span>{event.price}</span>
+    <div className="Upcoming-events">
+      {events.map((Event, index) => (
+        <div className="Event-card" key={index}>
+          <img src={Event.img} alt={Event.title} />
+          <div className="Event-info">
+            <h3>{Event.title}</h3>
+            <p>{Event.date}</p>
+            <span>{Event.price}</span>
           </div>
         </div>
       ))}

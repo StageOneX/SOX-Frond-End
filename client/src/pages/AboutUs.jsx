@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "./About.css";
+import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="about">
+    <div className="About">
       <Navbar />
-      <section className="about-section">
-        <h1>About StageOneX</h1>
+      <section className="About-section">
+        <h1>About Us</h1>
         <p>
           StageOneX is a platform built to host, manage, and promote
           extraordinary events across Sri Lanka and worldwide. We bring
