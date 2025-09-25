@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img src="/images/wayamba-expo.jpg" alt="Wayamba Expo" />
+        <img src='/images/wayamba-expo.jpg' alt="Wayamba Expo" />
       </div>
     </section>
   );
