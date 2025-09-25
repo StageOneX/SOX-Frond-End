@@ -3,6 +3,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .event-card {
@@ -11,6 +12,9 @@
   overflow: hidden;
   width: 300px;
   transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #3b82f6;
 }
 
 .event-card img {
@@ -21,18 +25,25 @@
 
 .event-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
 }
 
 .event-info {
   padding: 15px;
+  color: #ffffff;
+
 }
 
 .event-info h3 {
   font-size: 1.2rem;
   margin-bottom: 5px;
+  color: #ffffff;
+
 }
 
 .event-info span {
   color: #3b82f6;
   font-weight: bold;
+  font-size: 0.9rem;
 }
