@@ -1,9 +1,15 @@
 .hero {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: flex-start;
   padding: 100px 900px 900px 60px ;
   height: 100vh; 
+=======
+  height: 100vh;
+  justify-content: space-between; 
+  padding: 80px 900px 900px 80px;
+>>>>>>> d8ebb750cfe3fd72a17b07fc5f29d8fade8d757d
   background: #0d0d2b;
   color: rgb(255, 255, 255);
   gap: 50px;
@@ -12,12 +18,26 @@
 
 }
 
+
 .hero-text {
+<<<<<<< HEAD
   max-width: 600px;
+=======
+  max-width: px;
+  padding: 1px 1px;
+  flex: 1;
+  text-align: left;
+  height: 100%;
+>>>>>>> d8ebb750cfe3fd72a17b07fc5f29d8fade8d757d
 }
 
 .hero-text h1 {
   font-size: 3.5rem;
+  margin-bottom: 1px;
+  line-height: -5.2rem;
+  font-weight: bold;
+  color: #ffffff;
+
 }
 
 .highlight {
@@ -28,13 +48,21 @@
   margin-top: 20px;
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 900px;
+  flex: 1;
+  justify-content: left;
+  align-items: center;
+
 }
 
 .hero-actions input {
   padding: 10px;
   border-radius: 6px;
   border: none;
+  flex: 1;
+
 }
 
 .subscribe {
@@ -43,15 +71,25 @@
   padding: 10px 15px;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .contact {
   background: #786f6f;
   color: white;
   padding: 10px 15px;
-  border-radius: -5px;
+  border-radius: 5px;
   border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
 }
+<<<<<<< HEAD
 
 .hero-image img {
   max-width: 100%;
@@ -77,3 +115,21 @@
 .hero-text {
   max-width: 600px;
 }
+=======
+.hero-buttons{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+
+}
+.hero-image {
+  flex: 1;
+  text-align: right;
+  height: 100%;
+  max-width: 900px; 
+  overflow: hidden; 
+
+ 
+
+} 
+>>>>>>> d8ebb750cfe3fd72a17b07fc5f29d8fade8d757d

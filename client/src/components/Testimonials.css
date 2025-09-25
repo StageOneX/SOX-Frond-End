@@ -3,6 +3,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .testimonial-card {
@@ -11,6 +12,12 @@
   border-radius: 12px;
   width: 260px;
   text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #3b82f6;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+
 }
 
 .testimonial-card img {
@@ -18,9 +25,13 @@
   height: 70px;
   border-radius: 50%;
   margin-bottom: 15px;
+  object-fit: cover;
+
 }
 
 .testimonial-card h4 {
   margin-bottom: 10px;
   color: #3b82f6;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
