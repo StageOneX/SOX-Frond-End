@@ -6,7 +6,7 @@ const UpcomingEvents = () => {
   const events = [
     { title: "Wayamba Expo 2026", date: "15th - 11th AUG 2026", price: "900 LKR", img :"/images/myphoto.jpg"},
     { title: "MedEx Expo 2025", date: "18th - 21st SEP 2025", price: "800 LKR", img: "/images/medex.jpg" },
-    //{ title: "Wayamba Expo 2026", date: "15th - 11th AUG 2026", price: "900 LKR", img :"/images/myphoto.jpg"}
+    { title: "EduFirst Expo 2026", date: "15th - 11th AUG 2026", price: "900 LKR", img :"/images/edu.jpg"}
 
   ];
 
