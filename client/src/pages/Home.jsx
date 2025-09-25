@@ -81,7 +81,7 @@ const Home = () => {
       <section className="section">
         <h2 className="section-title">All Events</h2>
         <p className="section-subtitle">
-          Browse and discover our full list of events happening soon.
+          <h2>Browse and discover our full list of events happening soon.</h2>
         </p>
         <div className="events-grid">
           {events.map((event) => (

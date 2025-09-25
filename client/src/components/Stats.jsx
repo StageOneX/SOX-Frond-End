@@ -7,11 +7,11 @@ const Stats = () => {
     <div className="stats">
       <div className="stat">
         <b><h2>50+</h2></b>
-        <p>Live Sessions this month</p>
+        <p><b>Live Sessions <br/>this month</b></p>
       </div>
       <div className="stat">
         <h2>100+</h2>
-        <p>Exhibitors worldwide</p>
+        <p>Exhibitors <br/>worldwide</p>
       </div>
       <div className="stat">
         <h2>20+</h2>
