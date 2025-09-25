@@ -12,7 +12,7 @@ const Events = () => {
       date: "15th - 11th AUG 2026",
       price: "500 LKR",
       status: "Ongoing",
-      image: "/images/wayamba-expo.jpg",
+      image: "/images/wayamb-expo.jpg",
     },
     {
       id: 2,

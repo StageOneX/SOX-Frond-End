@@ -1,14 +1,19 @@
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 600px;
+  justify-content: flex-start;
+  padding: 100px 900px 900px 60px ;
+  height: 100vh; 
   background: #0d0d2b;
-  color: white;
+  color: rgb(255, 255, 255);
+  gap: 50px;
+  flex-wrap: wrap;
+
+
 }
 
 .hero-text {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .hero-text h1 {
@@ -41,9 +46,34 @@
 }
 
 .contact {
-  background: #222;
+  background: #786f6f;
   color: white;
   padding: 10px 15px;
   border-radius: -5px;
   border: none;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  width: 400px;
+  border-radius: 10px;
+  padding: 9px 8px 9px 6px ; 
+  object-fit: cover; 
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 100px 70px 60px 60px ; 
+  height: 50vh;
+  background: #0d0d2b;
+  color: rgb(255, 255, 255);
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
 }

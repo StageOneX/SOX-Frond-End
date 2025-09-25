@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./Hero.css";
 
 
+
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -21,7 +23,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img src='/images/wayamba-expo.jpg' alt="Wayamba Expo" />
+        <img src="/images/myphoto.jpg" alt="My Photo" width="300" />
       </div>
     </section>
   );

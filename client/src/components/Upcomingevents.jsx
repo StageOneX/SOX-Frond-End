@@ -4,9 +4,8 @@ import "./UpcomingEvents.css";
 
 const UpcomingEvents = () => {
   const events = [
-    { title: "MedEx Expo 2026", date: "15th - 11th AUG 2026", price: "800 LKR", img: "/images/medex.jpg" },
-    { title: "Kings & Queens Wedding Expo", date: "15th - 11th AUG 2026", price: "600 LKR", img: "/images/wedding.jpg" },
-    { title: "BuildFirst Expo 2025", date: "15th - 11th DEC 2025", price: "800 LKR", img: "/images/build.jpg" }
+{ title: "Wayamba Expo 2026", date: "15th - 11th AUG 2026", price: "500 LKR", img :"/images/myphoto.jpg"},
+    { title: "MedEx Expo 2025", date: "18th - 21st SEP 2025", price: "800 LKR", img: "/images/medex.jpg" }
   ];
 
   return (
