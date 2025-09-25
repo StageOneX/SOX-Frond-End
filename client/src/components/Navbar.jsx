@@ -18,12 +18,13 @@ const Navbar = () => {
           <li><a href="/events">Events</a></li>
           <li><a href="/tickets">Tickets</a></li>
           <li><a href="/about">About Us</a></li>
-        </ul>
+        
 
         {/* Sign in Button */}
-        <div className="navbar-actions">
+        <li><div className="navbar-actions">
           <button className="signin-btn">Sign in</button>
-        </div>
+        </div></li>
+        </ul>
       </div>
     </nav>
   );
