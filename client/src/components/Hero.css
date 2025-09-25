@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 700px;
+  padding: 300px;
   background: #0d0d2b;
   color: white;
 }
 
 .hero-text {
-  max-width: 700px;
+  max-width: 250px;
 }
 
 .hero-text h1 {
