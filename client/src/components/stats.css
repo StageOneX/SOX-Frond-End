@@ -31,3 +31,13 @@
     padding: 10px;
   }
 }
+
+.stats h2:hover {
+  color: rgb(90, 215, 65);
+  transition: color 0.5s ease;
+}
+
+.stat p:hover {
+  color: rgb(90, 215, 65);
+  transition: color 0.5s ease;
+}

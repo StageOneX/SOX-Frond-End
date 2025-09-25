@@ -35,3 +35,8 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(224, 224, 223, 0.3);
+}

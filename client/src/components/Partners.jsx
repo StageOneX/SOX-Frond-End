@@ -4,10 +4,10 @@ import "./Partners.css";
 
 const Partners = () => {
   const partners = [
-    "/images/partner1.png",
-    "/images/partner2.png",
-    "/images/partner3.png",
-    "/images/partner4.png"
+    "/images/partner1.jpg",
+    "/images/partner2.jpeg",
+    "/images/partner3.jpg",
+    "/images/partner4.webp"
   ];
 
   return (

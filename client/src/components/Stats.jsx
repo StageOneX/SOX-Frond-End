@@ -6,7 +6,7 @@ const Stats = () => {
   return (
     <div className="stats">
       <div className="stat">
-        <h2>50+</h2>
+        <b><h2>50+</h2></b>
         <p>Live Sessions this month</p>
       </div>
       <div className="stat">
