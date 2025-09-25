@@ -41,7 +41,6 @@ const Navbar = () => {
 
         {/* Right - Buttons */}
         <div className="navbar-right">
-          <button className="secondary-btn">Register</button>
           <button className="signin-btn">Sign In</button>
         </div>
 
