@@ -8,11 +8,11 @@ const Events = () => {
   const events = [
     {
       id: 1,
-      title: "Wayamba Expo 2026",
+      title: "Wayamba Expo 2027",
       date: "15th - 11th AUG 2026",
       price: "500 LKR",
       status: "Ongoing",
-      image: "/images/wayamb-expo.jpg",
+      image: "/images/myphoto.jpg",
     },
     {
       id: 2,

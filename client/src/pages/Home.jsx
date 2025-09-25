@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import OngoingEvents from "../components/OngoingEvents";
-import UpcomingEvents from "../components/UpcomingEvents";
+import UpcomingEvents from "../components/Upcomingevents";
 import Stats from "../components/Stats";
 import Testimonials from "../components/Testimonials";
 import Partners from "../components/Partners";
@@ -14,11 +14,11 @@ const Home = () => {
   const events = [
     {
       id: 1,
-      title: "Wayamba Expo 2026",
+      title: "Wayamba Expo 2027",
       date: "15th - 11th AUG 2026",
       price: "500 LKR",
       status: "Ongoing",
-      image: "/images/wayamba-expo.jpg",
+      image: "/images/myphoto.jpg",
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const Home = () => {
       date: "18th - 21st SEP 2025",
       price: "800 LKR",
       status: "Ongoing",
-      image: "/images/medex-expo.jpg",
+      image: "/images/medex.jpg",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Home = () => {
       date: "15th - 11th AUG 2026",
       price: "600 LKR",
       status: "Upcoming",
-      image: "/images/wedding-expo.jpg",
+      image: "/images/queen.jpg",
     },
     {
       id: 4,
@@ -42,7 +42,23 @@ const Home = () => {
       date: "15th - 11th DEC 2025",
       price: "800 LKR",
       status: "Upcoming",
-      image: "/images/buildfirst-expo.jpg",
+      image: "/images/build.jpg",
+    },
+    {
+      id: 5,
+      title: "EduFirst Expo 2025",
+      date: "15th - 11th DEC 2025",
+      price: "800 LKR",
+      status: "Upcoming",
+      image: "/images/edu.jpg",
+    },
+    {
+      id: 4,
+      title: "EduFirst Expo 2026",
+      date: "15th - 11th DEC 2026",
+      price: "500 LKR",
+      status: "Upcoming",
+      image: "/images/edu.jpg",
     },
   ];
 

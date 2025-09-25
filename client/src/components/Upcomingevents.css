@@ -1,43 +1,45 @@
-.upcoming-events {
+.Upcoming-events {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 10px;
-
+  padding: 20px;
 }
 
-.upcoming-events .event-card {
+.Upcoming-events .Event-card {
   background: #1a1a1a;
   border-radius: 10px;
   overflow: hidden;
-  width: 200%;
+  width: 350px;
   transition: transform 0.3s;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 2px solid #3b82f6;
 }
 
-.upcoming-events img {
+.Upcoming-events img {
   width: 100%;
-  height: 120px;
+  height: 200px;
   object-fit: cover;
-
 }
 
-.upcoming-events .event-card:hover {
+.Upcoming-events .Event-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.upcoming-events .event-info {
-  padding: 15px;
+.Upcoming-events .Event-info {
+  padding: 20px;
   color: #ffffff;
-
 }
 
-.upcoming-events .event-info span {
+.Upcoming-events .Event-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.Upcoming-events .Event-info span {
   color: #3b82f6;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }

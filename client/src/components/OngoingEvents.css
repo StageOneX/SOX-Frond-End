@@ -1,9 +1,9 @@
 .ongoing-events {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   gap: 20px;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px; 
 }
 
 .event-card {

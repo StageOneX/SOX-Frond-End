@@ -9,9 +9,9 @@ const AppContext = createContext();
 // Provider component
 export const AppProvider = ({ children }) => {
   const [tickets, _setTickets] = useState([
-    { id: 1, event: "Wayamba Expo 2026", date: "15th AUG 2026", price: 500, currency: "LKR" },
+    { id: 1, event: "Wayamba Expo 2026", date: "15th AUG 2026", price: 700, currency: "LKR" },
     { id: 2, event: "MedEx Expo 2025", date: "21st SEP 2025", price: 800, currency: "LKR" },
-    { id: 3, event: "Kings & Queens Wedding Expo", date: "11th AUG 2026", price: 600, currency: "LKR" },
+    
   ]);
 
   const bookTicket = (id) => {
