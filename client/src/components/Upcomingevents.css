@@ -10,7 +10,7 @@
   background: #1a1a1a;
   border-radius: 10px;
   overflow: hidden;
-  width: 350px;
+  width: 250px;
   transition: transform 0.3s;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
