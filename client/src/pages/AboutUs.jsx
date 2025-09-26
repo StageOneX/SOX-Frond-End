@@ -59,17 +59,17 @@ const AboutUs = () => {
         <h2>Meet Our Team</h2>
         <div className="team-grid">
           <div className="team-card">
-            <img src="/images/team1.jpg" alt="Team Member 1" />
+            <img src="/images/user1.png" alt="Team Member 1" />
             <h3>Kalana Sadaruwan</h3>
             <p>Founder & CEO</p>
           </div>
           <div className="team-card">
-            <img src="/images/team2.jpg" alt="Team Member 2" />
+            <img src="/images/user2.webp" alt="Team Member 2" />
             <h3>Akila Rajakaruna</h3>
             <p>Operations Manager</p>
           </div>
           <div className="team-card">
-            <img src="/images/team3.jpg" alt="Team Member 3" />
+            <img src="/images/user3.webp" alt="Team Member 3" />
             <h3>Janith Edirimanna</h3>
             <p>Technical Lead</p>
           </div>

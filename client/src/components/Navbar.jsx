@@ -8,22 +8,24 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-logo">
-          <h2>StageOneX</h2>
+          <h2><Link to="/Home">StageOneX</Link></h2>
         </div>
 
         {/* Menu Links */}
         <ul className="navbar-links">
-          <li><a href="/Home">Home</a></li>
-          <li><a href="/WhatsOn">WhatsOn</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/tickets">Tickets</a></li>
-          <li><a href="/about">About Us</a></li>
-        
+          <li><Link to="/Home">Home</Link></li>
+          <li><Link to="/WhatsOn">WhatsOn</Link></li>
+          <li><Link to="/Events">Events</Link></li>
+          <li><Link to="/Tickets">Tickets</Link></li>
+          <li><Link to="/About">About Us</Link></li>
+          
 
-        {/* Sign in Button */}
-        <li><div className="navbar-actions">
-          <button className="signin-btn">Sign in</button>
-        </div></li>
+          {/* Sign in Button */}
+          <li>
+            <div className="navbar-actions">
+              <button className="signin-btn"><li><Link to="/Login">Sign in</Link></li></button>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>

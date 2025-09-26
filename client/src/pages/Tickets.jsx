@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-//import { useAppContext } from "../context/AppContext";
+import { useAppContext } from "../context/AppContext";
 import "./Tickets.css";
 
 const Tickets = () => {
@@ -16,7 +16,9 @@ const Tickets = () => {
 
         <div className="ticket-box">
           {tickets.map((t) => (
+            
             <div key={t.id} className="ticket-item">
+              <img src={t.image} alt={t.event} className="ticket-image" />
               <h3>{t.event}</h3>
               <p>{t.date}</p>
               <p>

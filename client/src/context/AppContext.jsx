@@ -1,23 +1,24 @@
-// src/context/AppContext.jsx
-import React, { createContext, useState } from "react";
 
-// Context create
+import React, { createContext, useState, useContext } from "react";
+
+// Create Context
 const AppContext = createContext();
 
-// (Removed hook export to fix fast refresh error)
+export const useAppContext = () => {
+  return useContext(AppContext);
+};
 
 // Provider component
 export const AppProvider = ({ children }) => {
   const [tickets, _setTickets] = useState([
-    { id: 1, event: "Wayamba Expo 2026", date: "15th AUG 2026", price: 700, currency: "LKR" },
-    { id: 2, event: "MedEx Expo 2025", date: "21st SEP 2025", price: 800, currency: "LKR" },
-    
+    { id: 1, event: "Wayamba Expo 2026", date: "15th AUG 2026", price: 700, currency: "LKR", image: "/images/myphoto.jpg" },
+    { id: 2, event: "MedEx Expo 2025", date: "21st SEP 2025", price: 800, currency: "LKR" , image: "/images/medex.jpg"},
   ]);
 
   const bookTicket = (id) => {
     const ticket = tickets.find((t) => t.id === id);
     if (ticket) {
-      alert(`🎟️ Ticket booked for ${ticket.event} (${ticket.price} ${ticket.currency})`);
+      alert(`Ticket booked for ${ticket.event} (${ticket.price} ${ticket.currency})`);
     }
   };
 
@@ -27,4 +28,5 @@ export const AppProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
+
 export default AppContext;

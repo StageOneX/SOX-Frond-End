@@ -13,6 +13,7 @@ const WhatsOn = () => {
       venue: "Kurunegala Exhibition Center",
       price: 500,
       currency: "LKR",
+      img: "/images/myphoto.jpg",
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ const WhatsOn = () => {
       venue: "Colombo BMICH",
       price: 800,
       currency: "LKR",
+      img: "/images/medex.jpg",
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ const WhatsOn = () => {
       venue: "Kandy City Center",
       price: 600,
       currency: "LKR",
+      img: "/images/queen.jpg",
     },
   ];
 
@@ -44,14 +47,16 @@ const WhatsOn = () => {
         <div className="WhatsOn-list">
           {events.map((e) => (
             <div key={e.id} className="WhatsOn-item">
+              <img src={e.img} alt={e.title} />
               <h3>{e.title}</h3>
-              <p><strong>Status:</strong> {e.status}</p>
+              <p><strong>Status:</strong> {e.status}</p> 
               <p><strong>Date:</strong> {e.date}</p>
               <p><strong>Venue:</strong> {e.venue}</p>
               <p>
                 <strong>Price:</strong> {e.price} {e.currency}
               </p>
               <button className="btn-details">View Details</button>
+              
             </div>
           ))}
         </div>

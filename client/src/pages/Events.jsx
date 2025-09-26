@@ -20,7 +20,7 @@ const Events = () => {
       date: "18th - 21st SEP 2025",
       price: "800 LKR",
       status: "Ongoing",
-      image: "/images/medex-expo.jpg",
+      image: "/images/medex.jpg",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Events = () => {
       date: "15th - 11th AUG 2026",
       price: "600 LKR",
       status: "Upcoming",
-      image: "/images/wedding-expo.jpg",
+      image: "/images/queen.jpg",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ const Events = () => {
       date: "15th - 11th DEC 2025",
       price: "800 LKR",
       status: "Upcoming",
-      image: "/images/buildfirst-expo.jpg",
+      image: "/images/build.jpg",
     },
   ];
 

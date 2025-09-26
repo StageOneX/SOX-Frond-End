@@ -56,3 +56,10 @@
 .btn-buy:hover {
   background: #2b7fcc;
 }
+
+.ticket-image {
+  width: 50%;
+  height: 50%; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+}

@@ -57,3 +57,12 @@
 .btn-details:hover {
   background: #2b7fcc;
 }
+
+.WhatsOn-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1px;
+  object-fit: cover;
+  height: 250px;
+
+}

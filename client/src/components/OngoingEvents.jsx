@@ -12,7 +12,7 @@ const OngoingEvents = () => {
     <div className="ongoing-events">
       {events.map((event, index) => (
         <div className="event-card" key={index}>
-          <img src={event.img} alt={event.title} />
+          <img src={event.img} alt={event.title} />  
           <div className="event-info">
             <h3>{event.title}</h3>
             <p>{event.date}</p>
