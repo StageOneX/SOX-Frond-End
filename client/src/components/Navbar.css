@@ -1,90 +1,141 @@
+/* === Navbar with background bubble spotlight === */
 .navbar {
   width: 100%;
-  background: #1a1a1a;
-  padding: 12px 0px;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(59, 130, 246, 0.25),
+    rgba(26, 26, 26, 0.95) 70%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 12px 0;
   position: sticky;
-  top: 10px;
-  z-index: auto;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.1s ease-out;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
+
+/* Flex wrapper */
 .navbar-container {
-  width: 80%;
+  width: 85%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
-/* Add wrappers for left, center, right */
+/* === Left (Logo) === */
 .navbar-left {
   flex: 1;
   display: flex;
   align-items: center;
 }
 
+.navbar-logo h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-logo h2:hover {
+  color: #3b82f6;
+  transform: scale(1.05);
+}
+
+/* === Center (Links) === */
 .navbar-center {
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.navbar-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;   /* Prevent links from wrapping to next line */
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Keep text in one line */
+}
+
+/* Smooth underline animation */
+.navbar-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #3b82f6;
+}
+
+.navbar-links li a:hover::after {
+  width: 100%;
+}
+
+/* === Right (Buttons) === */
 .navbar-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 12px;
 }
 
-/* Remove float from logo */
-.navbar-logo h2 {
-  color: #ffffff;
-  margin: 0;
-  padding: 0 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Center links */
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  
-}
-.navbar-links li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-.navbar-links li a:hover {
-  color: #3b82f6; /*Blue hover effecr*/
-}
-
-/* single-button */
+/* Sign In button */
 .signin-btn {
-  background: linear-gradient(90deg,#06b6d4,#3b82f6); /* Blue background */
+  background: linear-gradient(90deg,#06b6d4,#3b82f6);
   color: #ffffff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease;
+  padding: 8px 20px;
   border-radius: 20px;
   cursor: pointer;
-  transition:opacity 0.3s ease;
+  font-size: 1rem;
   font-weight: 600;
-  margin-right: 10px;
-  
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .signin-btn:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Secondary button (Register) */
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #3b82f6;
+  color: #fff;
 }

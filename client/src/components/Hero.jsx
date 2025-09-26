@@ -21,6 +21,7 @@ const Hero = () => {
           <button className="subscribe">Subscribe</button>
           <button className="contact">Contact Us</button>
         </div>
+        
       </div>
       <div className="hero-image">
         <img src="/images/myphoto.jpg" alt="My Photo" width="300" />
@@ -28,5 +29,12 @@ const Hero = () => {
     </section>
   );
 };
-
+// Hero section mouse move spotlight effect
+document.addEventListener("mousemove", (e) => {
+  const hero = document.querySelector(".hero");
+  const x = (e.clientX / window.innerWidth) * 100;
+  const y = (e.clientY / window.innerHeight) * 100;
+  hero.style.setProperty("--x", `${x}%`);
+  hero.style.setProperty("--y", `${y}%`);
+});
 export default Hero;
