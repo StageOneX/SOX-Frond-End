@@ -70,9 +70,13 @@
 
 .footer-social .social-icons a {
   color: #fff;
-  margin-right: 15px;
+  margin-right: 19px;
   font-size: 20px;
+<<<<<<< HEAD
   transition: color 0.3s, transform 0.3s;
+=======
+ 
+>>>>>>> 3b328611e3bece3e545ff19aca2aa4175a63bf0d
 }
 
 .footer-social .social-icons a:hover {
@@ -96,4 +100,14 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+
+.fb{
+  width: 15%;
+  height: 30px;
+}
+
+.wap{
+  width: 20%;
+  height: 40px;
 }

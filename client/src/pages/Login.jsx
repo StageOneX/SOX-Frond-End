@@ -3,20 +3,15 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
 
 const Login = () => {
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    const [email,setEmail]=useState("");
+    const [password, setPassword] = useState("");
+
     
     
     
@@ -38,7 +33,7 @@ const Login = () => {
             </div>
             <br />
 
-            <div className="agree">   <input type="checkbox" /> I agree all statements in Terms of service</div> 
+            <div className="agree">   <input type="checkbox"  /> I agree all statements in Terms of service</div> 
             
             <br />
             <div className="sign-button">

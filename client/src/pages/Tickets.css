@@ -12,8 +12,8 @@
 
 .ticket-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
   margin-top: 30px;
 }
 
@@ -58,8 +58,8 @@
 }
 
 .ticket-image {
-  width: 50%;
-  height: 50%; 
+  width: 60%;
+  height: 60%; 
   border-radius: 10px;
   margin-bottom: 15px;
 }
