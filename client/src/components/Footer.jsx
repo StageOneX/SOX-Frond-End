@@ -53,11 +53,5 @@ const Footer = () => {
     </footer>
   );
 };
-const footer = document.querySelector(".footer");
 
-footer.addEventListener("mousemove", (e) => {
-  const rect = footer.getBoundingClientRect();
-  footer.style.setProperty("--x", `${e.clientX - rect.left}px`);
-  footer.style.setProperty("--y", `${e.clientY - rect.top}px`);
-});
 export default Footer;

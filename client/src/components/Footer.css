@@ -70,7 +70,7 @@
 
 .footer-social .social-icons a {
   color: #fff;
-  margin-right: 15px;
+  margin-right: 19px;
   font-size: 20px;
   transition: color 0.3s, transform 0.3s;
 }
@@ -96,4 +96,14 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+
+.fb{
+  width: 15%;
+  height: 30px;
+}
+
+.wap{
+  width: 15%;
+  height: 30px;
 }

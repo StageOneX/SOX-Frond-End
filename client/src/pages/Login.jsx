@@ -6,11 +6,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
-const Login = () => {
-    
-    
-    const [email,setEmail]=useState("");
-    const [password, setPassword] = useState("");
 
     
     
@@ -22,7 +17,7 @@ const Login = () => {
         <section className="login-page">
 
             <div className="login-header">
-                <h2>Welcome Miracle StageX</h2>
+                <h2>Welcome MiracleStageX</h2>
                 <h4>Login or <Link><u>create an account</u></Link></h4>
 
             </div>
@@ -55,16 +50,6 @@ const Login = () => {
                 
             </div><br /><br /><br /><br /><br /><br />
             <Footer />
-
-
-
-
-
-
-
-
-
-
 
 
         </section>
