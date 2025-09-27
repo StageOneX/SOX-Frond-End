@@ -1,68 +1,65 @@
-import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import "./Login.css";
-import { Link } from "react-router-dom";
-import axios from "axios";
+// import React from "react";
+// import Navbar from "../components/Navbar";
+// import Footer from "../components/Footer";
+// import "./Login.css";
+// import { Link } from "react-router-dom";
+// import axios from "axios";
+// import { useState } from "react";
 
-const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+// const Login = () => {
+    
+    
+//     const [email,setEmail]=useState("");
+//     const [password, setPassword] = useState("");
 
-  return (
-    <section className="login-page">
-      <Navbar />
+    
+    
+    
+    
+    
+//     return (
 
-      <div className="login-container">
-        {/* Header */}
-        <div className="login-header">
-          <h2>Welcome StageOneX</h2>
-          <h4>
-            Login or <Link to="/signup"><u>create an account</u></Link>
-          </h4>
-        </div>
+//         <section className="login-page">
 
-        {/* Form */}
-        <div className="login-form">
-          <input
-            type="email"
-            placeholder="Email:"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password:"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+//             <div className="login-header">
+//                 <h2>Welcome Miracle StageX</h2>
+//                 <h4>Login or <Link><u>create an account</u></Link></h4>
 
-          <div className="agree">
-            <input type="checkbox" /> I agree all statements in Terms of service
-          </div>
+//             </div>
 
-          <div className="sign-button">
-            <input type="button" value="SIGN IN" />
-          </div>
+//             <div className="login-form">
+//                 <input type="email" placeholder="Email:" /><br /><br />
+//                 <input type="password" placeholder="Password:" /><br />
+//             </div>
+//             <br />
 
-          {/* Social Buttons */}
-          <div className="socialmedia-button">
-            <button>
-              <img src="/images/fb.png" alt="facebook logo" width="20" height="20" />
-              Login with Facebook
-            </button>
+//             <div className="agree">   <input type="checkbox"  /> I agree all statements in Terms of service</div> 
+            
+//             <br />
+//             <div className="sign-button">
+//                 <input type="button" value="SIGN UP" />
+                
+//             </div>
+            
 
-            <button>
-              <img src="/images/google.png" alt="google logo" width="20" height="20" />
-              Login with Google
-            </button>
-          </div>
-        </div>
-      </div>
+//             <div className="socialmedia-button">
+//                 <button>
+//                     <img src="/images/fb.png" alt="facebook logo" width="20" height="20" />
+//                     Login with Facebook
+//                 </button>
+                
+//                 <p><button>
+//                     <img src="/images/google.png" alt="facebook logo" width="20" height="20" />
+//                     Login with Google
+//                 </button></p>
+                
+//             </div><br /><br /><br /><br /><br /><br />
+//             <Footer />
 
-      <Footer />
-    </section>
-  );
-};
+//         </section>
 
-export default Login;
+
+
+//     );
+// };
+// export default Login;

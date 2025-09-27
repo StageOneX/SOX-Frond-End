@@ -27,6 +27,7 @@
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 /* === Left (Logo) === */
 .navbar-left {
   flex: 1;
@@ -163,4 +164,9 @@
   .navbar-logo h2 {
     font-size: 1.4rem;
   }
+=======
+.navbar-links{
+  display: flex;
+  gap: 24px;
+>>>>>>> 942369cb5bf02e1bf78c96ae51c47940566cd7c2
 }
