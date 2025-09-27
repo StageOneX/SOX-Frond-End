@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { useAppContext } from "../context/AppContext";
 import "./Tickets.css";
 
+
 const Tickets = () => {
   const { tickets, bookTicket } = useAppContext();
 

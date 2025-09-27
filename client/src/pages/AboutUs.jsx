@@ -8,13 +8,14 @@ const AboutUs = () => {
     <div className="about-page">
       <Navbar />
 
-      <section className="about-hero">
+      <section className="about-hero"> 
         <h1>About Us</h1>
-        <p>
-          StageOneX is a platform built to host, manage, and promote
-          extraordinary events across Sri Lanka and worldwide. We bring
-          together concerts, sports, exhibitions, comedy shows, and more
-          under one virtual stage.
+        <p className="tagline">Connecting People, Creating Experiences
+          StageOneX is a next-generation platform built to host, manage, 
+          and promote extraordinary events across Sri Lanka and around the 
+          globe. We are passionate about creating unforgettable experiences by 
+          connecting people with the events they love.
+          From live concerts and music festivals to sports tournaments, exhibitions, cultural celebrations, and comedy shows, StageOneX brings them all together under one virtual stage.
         </p>
         <p>
           Our mission is to provide unforgettable experiences, help
@@ -26,15 +27,21 @@ const AboutUs = () => {
       <section className="about-section">
         <h2>Our Vision</h2>
         <p>
-          To be the leading virtual event hub that transforms the way people
-          connect, celebrate, and experience events without boundaries.
-        </p>
-
-        <h2>Our Mission</h2>
+          Our vision is to become the leading virtual event hub that 
+          redefines how people come together to connect, celebrate, and 
+          experience the moments that matter. We strive to break geographical 
+          barriers by creating a platform where events are not limited by 
+          location, distance, or scale.
+        </p><br/><br/>
+      <h2>Our Mission</h2>
         <p>
-          We strive to empower event organizers and audiences by delivering
-          seamless technology, creative solutions, and a global platform that
-          makes every event accessible to everyone.
+          Our mission is to create unforgettable experiences 
+          that leave lasting memories for every audience. 
+          We aim to empower event organizers by giving them the 
+          tools, visibility, and support they need to grow and succeed.
+          At the same time, we are dedicated to making events more 
+          accessible for everyone, ensuring that people from all walks 
+          of life can discover, attend, and enjoy world-class entertainment without limitations.
         </p>
       </section>
 

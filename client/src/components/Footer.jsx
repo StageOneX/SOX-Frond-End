@@ -40,14 +40,14 @@ const Footer = () => {
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-linkedin"></i></a>
-            <a href="#"><i className="fab fa-youtube"></i></a>
+            <a href="#"><li className="fab fa-facebook"></li><img className="fb" src="images/fb.png"/></a>
+            <a href="#"><i className="fab fa-instagram"></i><img className="fb" src="images/insta.webp"/></a>
+            <a href="#"><i className="fab fa-linkedin"></i><img className="fb" src="images/linkedin.webp"/></a>
+            <a href="#"><i className="fab fa-youtube"></i><img className="wap" src="images/whatsapp.png"/></a>
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className="footer-bottom"> 
         <p>© 2025 Copyright by Miracle Stage X. All rights reserved.</p>
       </div>
     </footer>
