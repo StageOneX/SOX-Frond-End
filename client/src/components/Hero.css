@@ -144,7 +144,7 @@
 }
 
 .hero-image {
-  flex: 1;
+  flex: 8;
   text-align: right;
   height: 100%;
   max-width: 500px; 
