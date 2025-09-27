@@ -4,9 +4,10 @@ import "./Testimonials.css";
 
 const Testimonials = () => {
   const feedback = [
-    { name: "Kalana Sadaruwan", text: "Amazing experience to join events easily.", img: "/images/user1.png" },
-    { name: "Akila Rajakaruna", text: "Easy to book tickets and attend events.", img: "/images/user2.webp" },
-    { name: "Janith Edirimanna", text: "Super organized and smooth experience.", img: "/images/user3.webp" },
+    { name: "Kalana Champika Deshapriya", text: "Amazing experience to join events easily.", img: "/images/user1.jpeg" },
+    { name: "Amitha Herath", text: "Easy to book tickets and attend events.", img: "/images/amitha.jpeg" },
+    { name: "Anuska Ishara", text: "Super organized and smooth experience.", img: "/images/anushka.jpeg" },
+    { name: "Mithila Dhanundara", text: "Super organized and smooth experience.", img: "/images/mithila.jpeg" },
   ];
 
   return (
