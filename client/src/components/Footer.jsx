@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         
         <div className="footer-about">
-          <h2>StageOneX</h2>
+          <h2>Stage OneX</h2>
           <p>
             Events and ticket marketplace in Sri Lanka for concerts, sports,
             theatre, exhibitions, stand-up comedy, and everything that’s live.
@@ -32,7 +32,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <p>No.10, Spring Field, Kurunegala, 20200</p>
           <p>+94 764456329</p>
-          <p>stageonex@gmail.com</p>
+          <p>stageonex.info@gmail.com</p>
           <p>Mon-Fri 9:00 - 17:00</p>
         </div>
 
