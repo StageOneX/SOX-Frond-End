@@ -66,18 +66,23 @@ const AboutUs = () => {
         <h2>Meet Our Team</h2>
         <div className="team-grid">
           <div className="team-card">
-            <img src="/images/user1.png" alt="Team Member 1" />
-            <h3>Kalana Sadaruwan</h3>
+            <img src="/images/user1.jpeg" alt="Team Member 1" />
+            <h3>Kalana Champika Deshapriya </h3>
             <p>Founder & CEO</p>
           </div>
           <div className="team-card">
-            <img src="/images/user2.webp" alt="Team Member 2" />
-            <h3>Akila Rajakaruna</h3>
+            <img src="/images/amitha.jpeg" alt="Team Member 2" />
+            <h3>Amitha Herath</h3>
             <p>Operations Manager</p>
           </div>
           <div className="team-card">
-            <img src="/images/user3.webp" alt="Team Member 3" />
-            <h3>Janith Edirimanna</h3>
+            <img src="/images/anushka.jpeg" alt="Team Member 3" />
+            <h3>Anuska Ishara</h3>
+            <p>Technical Lead</p>
+          </div>
+          <div className="team-card">
+            <img src="/images/mithila.jpeg" alt="Team Member 3" />
+            <h3>Mithila Dhanundara</h3>
             <p>Technical Lead</p>
           </div>
         </div>
