@@ -49,5 +49,13 @@ const Navbar = () => {
     </nav>
   );
 };
+document.addEventListener("mousemove", (e) => {
+  const navbar = document.querySelector(".navbar");
+  if (navbar) {
+    navbar.style.setProperty("--x", e.clientX + "px");
+    navbar.style.setProperty("--y", e.clientY + "px");
+  }
+});
+
 
 export default Navbar;

@@ -10,12 +10,14 @@
   overflow: hidden;
   position: relative;
 
-  /* Background with dynamic spotlight bubble */
+  /* Spotlight gradient background */
   background: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%), 
     rgba(59, 130, 246, 0.25), 
     #0d0d2b 70%
   );
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: background 0.1s ease-out;
 }
 
@@ -70,6 +72,14 @@
   -webkit-background-clip: text;
   animation: fadeSlide 1.5s ease forwards, gradientFlow 6s linear infinite;
   opacity: 0;
+  background-size: 200% auto;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #ddd;
 }
 
 @keyframes fadeSlide {
@@ -97,6 +107,7 @@
   border-radius: 6px;
   border: none;
   flex: 1;
+  font-size: 1rem;
 }
 
 .subscribe {
@@ -114,29 +125,18 @@
 }
 
 .contact {
-<<<<<<< HEAD
-  background: #464242;
-  color: white;
-  padding: 15px 18px;
-  border-radius: 5px;
-=======
   background: #555;
   color: white;
   padding: 10px 15px;
   border-radius: 6px;
->>>>>>> 7a3397c08e5ac09623339bc2c77bb00a14505ec5
   border: none;
   cursor: pointer;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  font-size: 75%;
-=======
   font-size: 1rem;
   transition: 0.3s;
->>>>>>> 7a3397c08e5ac09623339bc2c77bb00a14505ec5
 }
 .contact:hover {
   background: #333;
@@ -164,4 +164,21 @@
   0% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
   100% { transform: translateY(0px); }
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 30px;
+    text-align: center;
+    height: auto;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .hero-image {
+    text-align: center;
+    margin-top: 30px;
+  }
 }

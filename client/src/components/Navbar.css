@@ -3,7 +3,7 @@
   width: 100%;
   background: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%),
-    rgba(59, 130, 246, 0.25),
+    rgba(59, 130, 246, 0.25) 0%,
     rgba(26, 26, 26, 0.95) 70%
   );
   backdrop-filter: blur(12px);
@@ -12,8 +12,8 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: background 0.1s ease-out;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: background 0.15s ease-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Flex wrapper */
@@ -58,7 +58,6 @@
 .navbar-links {
   list-style: none;
   display: flex;
-  flex-wrap: nowrap;   /* Prevent links from wrapping to next line */
   gap: 35px;
   margin: 0;
   padding: 0;
@@ -71,7 +70,7 @@
   font-weight: 500;
   position: relative;
   transition: color 0.3s ease;
-  white-space: nowrap; /* Keep text in one line */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 /* Smooth underline animation */
@@ -105,7 +104,7 @@
 
 /* Sign In button */
 .signin-btn {
-  background: linear-gradient(90deg,#06b6d4,#3b82f6);
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
   color: #ffffff;
   border: none;
   padding: 8px 20px;
@@ -138,4 +137,28 @@
 .secondary-btn:hover {
   background: #3b82f6;
   color: #fff;
+}
+
+/* === Responsive Design === */
+@media (max-width: 992px) {
+  .navbar-center {
+    display: none; /* hide links on tablet/mobile */
+  }
+  .navbar-right {
+    flex: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-container {
+    width: 95%;
+  }
+  .signin-btn,
+  .secondary-btn {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+  }
+  .navbar-logo h2 {
+    font-size: 1.4rem;
+  }
 }
