@@ -47,11 +47,23 @@ const Footer = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
+      <div className="footer-bottom">
+        <p>© 2025 Copyright by Miracle StageOneX. All rights reserved.</p>
+=======
       <div className="footer-bottom"> 
         <p>© 2025 Copyright by Miracle Stage X. All rights reserved.</p>
+>>>>>>> 3b328611e3bece3e545ff19aca2aa4175a63bf0d
       </div>
     </footer>
   );
 };
 
+const footer = document.querySelector(".footer");
+
+footer.addEventListener("mousemove", (e) => {
+  const rect = footer.getBoundingClientRect();
+  footer.style.setProperty("--x", `${e.clientX - rect.left}px`);
+  footer.style.setProperty("--y", `${e.clientY - rect.top}px`);
+});
 export default Footer;
