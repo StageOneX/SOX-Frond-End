@@ -10,56 +10,13 @@ import Footer from "../components/Footer";
 import "./Home.css";
 
 const Home = () => {
-  // Sample events data (can later come from backend)
   const events = [
-    {
-      id: 1,
-      title: "Wayamba Expo 2027",
-      date: "15th - 11th AUG 2026",
-      price: "500 LKR",
-      status: "Ongoing",
-      image: "/images/myphoto.jpg",
-    },
-    {
-      id: 2,
-      title: "MedEx Expo 2025",
-      date: "18th - 21st SEP 2025",
-      price: "800 LKR",
-      status: "Ongoing",
-      image: "/images/medex.jpg",
-    },
-    {
-      id: 3,
-      title: "Kings & Queens Wedding Expo",
-      date: "15th - 11th AUG 2026",
-      price: "600 LKR",
-      status: "Upcoming",
-      image: "/images/queen.jpg",
-    },
-    {
-      id: 4,
-      title: "BuildFirst Expo 2025",
-      date: "15th - 11th DEC 2025",
-      price: "800 LKR",
-      status: "Upcoming",
-      image: "/images/build.jpg",
-    },
-    {
-      id: 5,
-      title: "EduFirst Expo 2025",
-      date: "15th - 11th DEC 2025",
-      price: "800 LKR",
-      status: "Upcoming",
-      image: "/images/edu.jpg",
-    },
-    {
-      id: 4,
-      title: "EduFirst Expo 2026",
-      date: "15th - 11th DEC 2026",
-      price: "500 LKR",
-      status: "Upcoming",
-      image: "/images/edu.jpg",
-    },
+    { id: 1, title: "Wayamba Expo 2027", date: "15th - 11th AUG 2026", price: "500 LKR", status: "Ongoing", image: "/images/myphoto.jpg" },
+    { id: 2, title: "MedEx Expo 2025", date: "18th - 21st SEP 2025", price: "800 LKR", status: "Ongoing", image: "/images/medex.jpg" },
+    { id: 3, title: "Kings & Queens Wedding Expo", date: "15th - 11th AUG 2026", price: "600 LKR", status: "Upcoming", image: "/images/queen.jpg" },
+    { id: 4, title: "BuildFirst Expo 2025", date: "15th - 11th DEC 2025", price: "800 LKR", status: "Upcoming", image: "/images/build.jpg" },
+    { id: 5, title: "EduFirst Expo 2025", date: "15th - 11th DEC 2025", price: "800 LKR", status: "Upcoming", image: "/images/edu.jpg" },
+    { id: 6, title: "EduFirst Expo 2026", date: "15th - 11th DEC 2026", price: "500 LKR", status: "Upcoming", image: "/images/edu.jpg" },
   ];
 
   return (
@@ -77,12 +34,9 @@ const Home = () => {
         <UpcomingEvents />
       </section>
 
-      {/* 🔹 New Events Section */}
       <section className="section">
         <h2 className="section-title">All Events</h2>
-        <p className="section-subtitle">
-          <h2>Browse and discover our full list of events happening soon.</h2>
-        </p>
+        <p className="section-subtitle">Browse and discover our full list of events happening soon.</p>
         <div className="events-grid">
           {events.map((event) => (
             <div key={event.id} className="event-card">
@@ -95,15 +49,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section">
-        <Stats />
-      </section>
-
+      <section className="section"><Stats /></section>
       <section className="section">
         <h2 className="section-title">What people say about us..</h2>
         <Testimonials />
       </section>
-
       <section className="section">
         <h2 className="section-title">Our Partners</h2>
         <Partners />

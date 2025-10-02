@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center; /* vertical */
-  padding: 20px;
+  padding: 60px;
 }
 
 /* === Box Wrapper === */

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  padding: 100px 90px 150px 60px; 
+  padding: 100px 70px 60px 60px; 
   height: 50vh;
   color: #fff;
   gap: 50px;
@@ -146,12 +146,12 @@
 .hero-image {
   flex: 8;
   text-align: right;
-  height: 140%;
+  height: 100%;
   max-width: 500px; 
   overflow: hidden;
   position: relative;
   z-index: 1;
-  animation: fadeIn 2s ease forwards; 
+  animation: fadeIn 2s ease forwards;
   opacity: 60;
 
 }
