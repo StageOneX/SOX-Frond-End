@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./WhatsOn.css";
 
+
 const WhatsOn = () => {
   const events = [
     {
@@ -37,12 +38,15 @@ const WhatsOn = () => {
     },
   ];
 
+  
+
   return (
     <div className="WhatsOn-page">
       <Navbar />
       <section className="WhatsOn-section">
         <h1>What's On</h1>
         <p>Check out all the ongoing and upcoming events happening now.</p>
+        
 
         <div className="WhatsOn-list">
           {events.map((e) => (
@@ -63,6 +67,7 @@ const WhatsOn = () => {
       </section>
       <Footer />
     </div>
+    
   );
 };
 

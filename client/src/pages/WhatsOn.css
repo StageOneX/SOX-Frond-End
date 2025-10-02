@@ -1,68 +1,151 @@
-.WhatsOn-page {
-  background: linear-gradient(180deg, #0a0f2c, #1c1f3b);
-  color: #fff;
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+/*
+ * What's On Page Styles - Mouse-Interactive Dark Theme (Parallax Effect)
+ * Focus: Creating depth and responsiveness based on mouse position.
+ */
+
+/* 1. Root Variables for the Effect */
+/* These variables will be updated by JavaScript to track the mouse position. */
+:root {
+  --mouse-x: 50%; /* Default center X position */
+  --mouse-y: 50%; /* Default center Y position */
 }
 
-.WhatsOn-section {
-  padding: 60px 10%;
-  text-align: center;
+.WhatsOn-page {
+  /* Deep, consistent dark background */
+  background: #0d1123;
+  color: #e0e6f7;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  position: relative; /* Essential for containing the background effect */
+  perspective: 1000px; /* Essential for 3D depth illusion */
 }
+
+/* 2. The Dynamic Background Layer (The "Experience") */
+.WhatsOn-page::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  /* Complex gradient that moves with the mouse */
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y), 
+    rgba(57, 160, 255, 0.1) 0%, /* Soft blue light at cursor */
+    rgba(15, 18, 43, 0.8) 40%, /* Gradient to the dark base */
+    #0d1123 70% /* Fade to solid background */
+  );
+  /* Use a smooth transition for the light movement */
+  transition: background 0.3s ease-out;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+/* --- Section Layout --- */
+
+.WhatsOn-section {
+  padding: 80px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; /* Keeps content above the dynamic background */
+  z-index: 10;
+}
+
+/* --- List/Grid Container --- */
 
 .WhatsOn-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
 }
 
+/* --- Individual Item Card (Slight Parallax on Hover) --- */
+
 .WhatsOn-item {
-  background: #1e223f;
+  background: #1a2038;
   border-radius: 15px;
   padding: 25px;
   text-align: left;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  /* Use a high-quality 3D transform for the lift */
+  transition: 
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), 
+    box-shadow 0.4s ease, 
+    background 0.3s ease;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .WhatsOn-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0px 6px 18px rgba(0,0,0,0.6);
+  /* Dynamic Lift and Blue Glow */
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(57, 160, 255, 0.6);
+  background: #202742;
+  border: 1px solid #39a0ff;
 }
 
-.WhatsOn-item h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #39a0ff;
-}
-
-.WhatsOn-item p {
-  margin: 5px 0;
-  color: #cfcfcf;
-}
-
-.btn-details {
-  margin-top: 12px;
-  padding: 8px 18px;
-  background: #39a0ff;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn-details:hover {
-  background: #2b7fcc;
-}
+/* --- Other Content (Same as previous animated version) --- */
 
 .WhatsOn-item img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1px;
+  border-radius: 10px;
+  margin-bottom: 20px;
   object-fit: cover;
-  height: 250px;
+  height: 230px; 
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.WhatsOn-item:hover img {
+    transform: scale(1.05); 
+}
+
+.WhatsOn-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #39a0ff;
+  font-weight: 700;
+}
+
+.WhatsOn-item p {
+  margin: 6px 0;
+  color: #c4d0e6; 
+  line-height: 1.6;
+}
+
+.btn-details {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #39a0ff;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px; 
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+.btn-details:hover {
+  background: #1e87e6; 
+  box-shadow: 0 0 15px rgba(57, 160, 255, 0.8), 0 0 5px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px);
+}
+
+.btn-details:active {
+  transform: translateY(0);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  /* Disable effect on small screens for performance and because mouse is less relevant */
+  .WhatsOn-page::before {
+    background: none; 
+    background-color: #0d1123; 
+    opacity: 1;
+  }
 }
