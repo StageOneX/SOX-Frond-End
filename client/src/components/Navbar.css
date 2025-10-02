@@ -20,7 +20,7 @@
 /* Flex wrapper (content area stays centered) */
 .navbar-container {
   max-width: 1100px; /* keeps content centered */
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -30,10 +30,10 @@
 
 .navbar-links{
   display: flex;
-  gap: 25px;
+  gap: 26px;
 }
 
 .navbar-logo img {
   height: 140px;
-  width: 220px;
+  width: 210px;
 }

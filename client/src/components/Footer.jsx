@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         
         <div className="footer-about">
-          <h2>Stage OneX</h2>
+          <h2><img src="/images/logo.png" /></h2>
           <p>
             Events and ticket marketplace in Sri Lanka for concerts, sports,
             theatre, exhibitions, stand-up comedy, and everything that’s live.
