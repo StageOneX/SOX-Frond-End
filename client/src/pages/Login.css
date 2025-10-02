@@ -1,20 +1,17 @@
-/* === Reset === */
-html,
-body {
+/* === Login Page Styles === */
+.login-page {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(180deg, #0a0f2c, #1c1f3b);
   color: #fff;
-}
-
-/* === Page === */
-.login-page {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+/* === Page === */
+/* Styles merged with login-page above */
+
 
 /* === Centered Container === */
 .login-container {
