@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="navbar-logo">
           <h2>
-            <Link to="/Home">StageOneX</Link>
+            <Link to="/Home">Stage OneX</Link>
           </h2>
         </div>
 

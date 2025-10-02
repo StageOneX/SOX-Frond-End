@@ -73,7 +73,7 @@ const Home = () => {
       </section>
 
       <section className="section">
-        <h2 className="section-title">UPCOMING</h2>
+        <h2 className="section-title">UPCOMING EVENTS</h2>
         <UpcomingEvents />
       </section>
 

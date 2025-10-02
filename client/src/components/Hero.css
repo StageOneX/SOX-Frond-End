@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  padding: 100px 70px 60px 60px; 
-  height: 100vh;
+  padding: 100px 90px 150px 60px; 
+  height: 50vh;
   color: #fff;
   gap: 50px;
   flex-wrap: wrap;
@@ -151,6 +151,9 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+  animation: fadeIn 2s ease forwards;
+  opacity: 60;
+
 }
 
 .hero-image img {
@@ -158,6 +161,9 @@
   height: auto;
   border-radius: 12px;
   animation: floatImage 6s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  
 }
 
 @keyframes floatImage {
