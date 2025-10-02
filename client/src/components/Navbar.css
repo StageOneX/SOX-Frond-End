@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw; /* full screen width */
   background: radial-gradient(
-    circle at var(--x, 50%) var(--y, 50%),
+    circle at var(--x, 500%) var(--y, 500%),
     rgba(59, 130, 246, 0.25) 0%,
     rgba(26, 26, 26, 0.95) 70%
   );
@@ -13,7 +13,7 @@
   -webkit-backdrop-filter: blur(12px);
   padding: 12px 0;
   z-index: 1000;
-  transition: background 0.15s ease-out;
+  transition: background 0.1s ease-out;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -48,7 +48,7 @@
 
 .signin-btn {
   background-color: #d2d4d6;
-  color: white;
+  color: rgb(88, 63, 63);
   padding: 8px 16px;
   border: none;
   border-radius: 6px;
