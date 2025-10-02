@@ -30,20 +30,20 @@ const Navbar = () => {
 
         {/* Menu Links */}
         <ul className="navbar-links">
-          <li><Link to="/Home">Home</Link></li>
-          <li><Link to="/WhatsOn">WhatsOn</Link></li>
-          <li><Link to="/Events">Events</Link></li>
-          <li><Link to="/Tickets">Tickets</Link></li>
-          <li><Link to="/About">About Us</Link></li>
+          <Link to="/Home">Home</Link>
+          <Link to="/WhatsOn">WhatsOn</Link>
+          <Link to="/Events">Events</Link>
+          <Link to="/Tickets">Tickets</Link>
+          <Link to="/About">About Us</Link>
 
           {/* Sign in Button */}
-          <li>
+          
             <div className="navbar-actions">
               <button className="signin-btn">
-                <Link to="/Login">Sign in</Link>
+                <Link to="/Login">Sign In</Link>
               </button>
             </div>
-          </li>
+          
         </ul>
       </div>
     </nav>
