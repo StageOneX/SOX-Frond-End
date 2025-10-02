@@ -15,6 +15,14 @@ const Events = () => {
       image: "/images/myphoto.jpg",
     },
     {
+      id: 1,
+      title: "Wayamba Expo 2027",
+      date: "15th - 11th AUG 2026",
+      price: "500 LKR",
+      status: "Ongoing",
+      image: "/images/myphoto.jpg",
+    },
+    {
       id: 2,
       title: "MedEx Expo 2025",
       date: "18th - 21st SEP 2025",
@@ -38,6 +46,15 @@ const Events = () => {
       status: "Upcoming",
       image: "/images/build.jpg",
     },
+    {
+      id: 5,
+      title: "BuildFirst Expo 2025",
+      date: "15th - 11th DEC 2025",
+      price: "800 LKR",
+      status: "Upcoming",
+      image: "/images/build.jpg",
+    },
+    
   ];
 
   return (
