@@ -58,7 +58,7 @@ const Events = () => {
                 <img src={event.image} alt={event.title} />
                 <h3>{event.title}</h3>
                 <p>{event.date}</p>
-                <span>{event.price}</span>
+                <span>{event.price}</span> 
               </div>
             ))}
         </div>
