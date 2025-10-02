@@ -1,95 +1,72 @@
-/* === Reset & Fullscreen Fix === */
-html, body {
-  height: 100%;
+/* === Reset === */
+html,
+body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(180deg, #0a0f2c, #1c1f3b);
   color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 
-/* === Page Wrapper === */
+/* === Page === */
 .login-page {
-  flex: 1;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-/* === Navbar === */
-.navbar {
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-}
-
-.navbar h1 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #3b82f6;
 }
 
 /* === Centered Container === */
 .login-container {
   flex: 1;
   display: flex;
-  justify-content: center;   /* horizontal */
-  align-items: center;       /* vertical */
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
   padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-/* === Inner Wrapper (Header + Form) === */
+/* === Box Wrapper === */
 .login-box {
   width: 100%;
   max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
 /* === Header === */
-.login-header {
-  margin-bottom: 20px;
-}
-
 .login-header h2 {
   margin-bottom: 5px;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-/* === Login Form Box === */
-.login-form {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 30px 25px;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  box-sizing: border-box;
+.login-header h4 {
+  font-size: 1rem;
+  color: #d1d5db;
   margin-bottom: 20px;
 }
 
-/* === Input Fields === */
+/* === Form === */
+.login-form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* === Inputs === */
 .login-form input[type="email"],
 .login-form input[type="password"] {
   width: 100%;
   padding: 12px 15px;
-  margin: 12px 0;
   border: 1px solid #3b82f6;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
   outline: none;
-  transition: all 0.3s ease;
   font-size: 1rem;
 }
 
@@ -98,43 +75,14 @@ html, body {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* === Agreement Text === */
+/* === Agree Checkbox === */
 .agree {
-  color: #cfcfcf;
   font-size: 0.8rem;
-  margin: 15px 0;
   text-align: left;
-  line-height: 1.4;
+  color: #cfcfcf;
 }
 
-/* === Forgot Password Link === */
-.forgot-password {
-  text-align: right;
-  margin: 5px 0 15px 0;
-}
-
-.forgot-password a {
-  color: #3b82f6;
-  font-size: 0.8rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.forgot-password a:hover {
-  color: #06b6d4;
-  text-decoration: underline;
-}
-
-/* === Buttons Wrapper === */
-.center-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 12px;
-}
-
-/* === Sign In Button === */
+/* === Sign Up Button === */
 .sign-button input {
   width: 100%;
   padding: 12px;
@@ -152,30 +100,33 @@ html, body {
   transform: scale(1.03);
 }
 
-/* === Social Media Buttons === */
+/* === Social Buttons === */
 .socialmedia-button {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .socialmedia-button button {
-  width: 25%;
-  padding: 13px;
-  background: #3b5998; /* Facebook */
-  color: #fff;
+  width: 100%;
+  padding: 12px;
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  margin: 10px 0;
   font-weight: 600;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.socialmedia-button button:nth-child(2) {
-  background: #db4437; /* Google red */
+.facebook-btn {
+  background: #3b5998;
+}
+
+.google-btn {
+  background: #db4437;
 }
 
 .socialmedia-button button:hover {
@@ -183,55 +134,12 @@ html, body {
   transform: scale(1.03);
 }
 
-/* === Sign Up Link === */
-.signup-link {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #d1d5db;
-}
-
-.signup-link a {
-  color: #3b82f6;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.signup-link a:hover {
-  color: #06b6d4;
-  text-decoration: underline;
-}
-
-/* === Footer === */
-.footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 0.8rem;
-  color: #9ca3af;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-}
-
-/* === Responsive Fix === */
+/* === Responsive === */
 @media (max-width: 480px) {
-  .login-form {
-    padding: 20px 15px;
+  .login-box {
     max-width: 90%;
   }
-
   .login-header h2 {
     font-size: 1.5rem;
-  }
-
-  .agree {
-    font-size: 0.7rem;
-  }
-
-  .forgot-password a {
-    font-size: 0.7rem;
-  }
-
-  .signup-link {
-    font-size: 0.8rem;
   }
 }
