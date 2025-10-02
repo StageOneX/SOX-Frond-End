@@ -30,18 +30,38 @@
 
 .navbar-links{
   display: flex;
+<<<<<<< HEAD
   gap: 25px;
   align-items: center;
   font-weight: 500;
   font-size: 1rem;
+=======
+  gap: 26px;
+>>>>>>> 42f3279e3ba72002db97b51f8fdd0e621158967e
 }
 
 .navbar-logo img {
   height: 140px;
+<<<<<<< HEAD
   width: 220px;
   object-fit: contain;
   margin-right: 20px;
   margin-top: 0px;
   cursor: pointer;
   transition: transform 0.3s ease;
+=======
+  width: 210px;
+>>>>>>> 42f3279e3ba72002db97b51f8fdd0e621158967e
 }
+
+.signin-btn {
+  background-color: #d2d4d6;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
