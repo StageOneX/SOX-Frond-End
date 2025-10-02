@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         
         <div className="footer-about">
-          <h2><img src="/images/logo.png" /></h2>
+          <h2><Link to="/Home"><img src="/images/logo.png" /></Link></h2>
           <p>
             Events and ticket marketplace in Sri Lanka for concerts, sports,
             theatre, exhibitions, stand-up comedy, and everything that’s live.
@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="social-icons">
             <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i><img className="fb" src="images/fb.png"/></a>
             <a href="https://www.instagram.com/accounts/login/?hl=en"><i className="fab fa-instagram"></i><img className="fb" src="images/insta.webp"/></a>
-            <a href="https://www.linkedin.com/"><i className="fab fa-linkedin"></i><img className="fb" src="images/linkedin.webp"/></a><br/>
+            <a href="https://www.linkedin.com/company/109035139/admin/dashboard/"><i className="fab fa-linkedin"></i><img className="fb" src="images/linkedin.webp"/></a><br/>
             <a href="https://web.whatsapp.com/"><i className="fab fa-youtube"></i><img className="wp" src="images/whatsapp.png"/></a>
           </div>
         </div>
