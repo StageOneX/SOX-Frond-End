@@ -29,7 +29,7 @@ import Navbar from "../components/Navbar";
 
            <div className="login-form">
                <input type="email" placeholder="Email:" /><br /><br />
-               <input type="password" placeholder="Password:" /><br />
+               <input type="password" placeholder="Password:" /><br /> 
            </div>
            <br />
 
