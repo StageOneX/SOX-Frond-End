@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./Events.css";
 
+
 const Events = () => {
   // Event data (you can later fetch from backend / API)
   const events = [

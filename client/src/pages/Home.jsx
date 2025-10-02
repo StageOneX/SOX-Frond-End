@@ -10,7 +10,6 @@ import Footer from "../components/Footer";
 import "./Home.css";
 
 const Home = () => {
-  // Sample events data (can later come from backend)
   const events = [
     {
       id: 1,
@@ -53,7 +52,7 @@ const Home = () => {
       image: "/images/edu.jpg",
     },
     {
-      id: 4,
+      id: 6,
       title: "EduFirst Expo 2026",
       date: "15th - 11th DEC 2026",
       price: "500 LKR",
@@ -77,11 +76,11 @@ const Home = () => {
         <UpcomingEvents />
       </section>
 
-      {/* 🔹 New Events Section */}
+      {/* All Events */}
       <section className="section">
         <h2 className="section-title">All Events</h2>
         <p className="section-subtitle">
-          <h2>Browse and discover our full list of events happening soon.</h2>
+          Browse and discover our full list of events happening soon.
         </p>
         <div className="events-grid">
           {events.map((event) => (

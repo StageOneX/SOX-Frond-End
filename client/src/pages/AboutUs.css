@@ -55,7 +55,7 @@
 }
 
 .stat-card {
-  background: #fff;
+  background: #c5b7b7;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
@@ -101,7 +101,7 @@
 }
 
 .team-card {
-  background: #fff;
+  background: #998c8c;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);

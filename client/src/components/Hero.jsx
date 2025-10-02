@@ -1,40 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Hero.css";
-
-
-
 
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero-text">
-        <h1>
-          Join the Virtual <span className="highlight">Stage oneX</span> Experience
-        </h1>
-        <p>
-          A powerful virtual stage where extraordinary events, unforgettable
-          experiences, and limitless opportunities come alive.
+      {/* 🔹 Video Background */}
+      <video autoPlay loop muted playsInline className="hero-video">
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* 🔹 Overlay */}
+      <div className="hero-overlay"></div>
+
+      {/* 🔹 Content */}
+      <div className="hero-content">
+        <h1 data-aos="fade-down">Welcome to StageOneX</h1>
+        <p data-aos="fade-up">
+          Your next-generation platform for unforgettable events.
+          Discover concerts, expos, festivals, and more all in one place.
         </p>
-        <div className="hero-actions">
-          <input type="email" placeholder="Type Your Email..." />
-          <button className="subscribe">Subscribe</button>
-          <button className="contact">Contact Us</button>
+        <div className="hero-buttons" data-aos="zoom-in">
+          <button className="btn-primary">Explore Events</button>
+          <button className="btn-secondary">Join Us</button>
         </div>
-        
-      </div>
-      <div className="hero-image">
-        <img src="/images/myphoto.jpg" alt="My Photo" width="400" />  
       </div>
     </section>
   );
 };
-// Hero section mouse move spotlight effect
-document.addEventListener("mousemove", (e) => {
-  const hero = document.querySelector(".hero");
-  const x = (e.clientX / window.innerWidth) * 100;
-  const y = (e.clientY / window.innerHeight) * 100;
-  hero.style.setProperty("--x", `${x}%`);
-  hero.style.setProperty("--y", `${y}%`);
-});
+
 export default Hero;
