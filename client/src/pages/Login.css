@@ -12,10 +12,9 @@ html, body {
 
 /* === Page Wrapper === */
 .login-page {
-  flex: 1; /* take full height except footer */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 /* === Navbar === */
@@ -36,19 +35,27 @@ html, body {
 
 /* === Centered Container === */
 .login-container {
-  flex: 1; /* take remaining space */
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;
+  justify-content: center;   /* horizontal */
+  align-items: center;       /* vertical */
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
+/* === Inner Wrapper (Header + Form) === */
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* === Header === */
 .login-header {
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -67,9 +74,8 @@ html, body {
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   width: 100%;
-  max-width: 400px;
-  text-align: center;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 /* === Input Fields === */
@@ -84,7 +90,6 @@ html, body {
   color: #fff;
   outline: none;
   transition: all 0.3s ease;
-  box-sizing: border-box;
   font-size: 1rem;
 }
 
@@ -120,24 +125,23 @@ html, body {
   text-decoration: underline;
 }
 
-/* === Centered Buttons Wrapper === */
+/* === Buttons Wrapper === */
 .center-buttons {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center horizontally */
+  align-items: center;
   width: 100%;
-  margin-top: 15px;
   gap: 12px;
 }
 
 /* === Sign In Button === */
 .sign-button input {
-  width: 30%;
+  width: 100%;
   padding: 12px;
   background: linear-gradient(90deg, #06b6d4, #3b82f6);
   color: #fff;
   border-radius: 25px;
-  border: dashed 2px #3b82f6;
+  border: none;
   cursor: pointer;
   font-weight: 600;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -150,17 +154,16 @@ html, body {
 
 /* === Social Media Buttons === */
 .socialmedia-button {
-  width: 30%;
-  text-align: center;
+  width: 100%;
 }
 
 .socialmedia-button button {
-  width: 100%;
-  padding: 12px;
+  width: 25%;
+  padding: 13px;
   background: #3b5998; /* Facebook */
   color: #fff;
   border-radius: 25px;
-  border: dashed 2px #3b82f6;
+  border: none;
   cursor: pointer;
   margin: 10px 0;
   font-weight: 600;
@@ -201,23 +204,15 @@ html, body {
 
 /* === Footer === */
 .footer {
-  text-align: left;
+  text-align: center;
   padding: 15px;
   font-size: 0.8rem;
   color: #9ca3af;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
-  margin-top: auto; /* always stick bottom */
 }
 
 /* === Responsive Fix === */
-@media (max-width: 768px) {
-  .sign-button input,
-  .socialmedia-button {
-    width: 70%;
-  }
-}
-
 @media (max-width: 480px) {
   .login-form {
     padding: 20px 15px;
@@ -239,14 +234,4 @@ html, body {
   .signup-link {
     font-size: 0.8rem;
   }
-
-  .sign-button input,
-  .socialmedia-button {
-    width: 90%;
-  }
 }
-/* === Animations === */
-@keyframes floatIdle {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-} 

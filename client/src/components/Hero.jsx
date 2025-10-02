@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-text">
         <h1>
-          Join the Virtual <span className="highlight">StageoneX</span> Experience
+          Join the Virtual <span className="highlight">Stage oneX</span> Experience
         </h1>
         <p>
           A powerful virtual stage where extraordinary events, unforgettable
