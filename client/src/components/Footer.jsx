@@ -40,10 +40,10 @@ const Footer = () => {
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook"></i><img className="fb" src="images/fb.png"/></a>
-            <a href="#"><i className="fab fa-instagram"></i><img className="fb" src="images/insta.webp"/></a>
-            <a href="#"><i className="fab fa-linkedin"></i><img className="fb" src="images/linkedin.webp"/></a><br/>
-            <a href="#"><i className="fab fa-youtube"></i><img className="wp" src="images/whatsapp.png"/></a>
+            <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i><img className="fb" src="images/fb.png"/></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i className="fab fa-instagram"></i><img className="fb" src="images/insta.webp"/></a>
+            <a href="https://www.linkedin.com/"><i className="fab fa-linkedin"></i><img className="fb" src="images/linkedin.webp"/></a><br/>
+            <a href="https://web.whatsapp.com/"><i className="fab fa-youtube"></i><img className="wp" src="images/whatsapp.png"/></a>
           </div>
         </div>
       </div>

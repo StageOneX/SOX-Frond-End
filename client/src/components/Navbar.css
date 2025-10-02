@@ -19,16 +19,21 @@
 
 /* Flex wrapper (content area stays centered) */
 .navbar-container {
-  max-width: 1200px; /* keeps content centered */
+  max-width: 1100px; /* keeps content centered */
   width: 90%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 70px;
 }
 
 .navbar-links{
   display: flex;
-  gap: 24px;
+  gap: 25px;
 }
 
+.navbar-logo img {
+  height: 140px;
+  width: 220px;
+}
