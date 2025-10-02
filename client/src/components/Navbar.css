@@ -30,12 +30,20 @@
 
 .navbar-links{
   display: flex;
-  gap: 26px;
+  gap: 25px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .navbar-logo img {
   height: 140px;
-  width: 210px;
+  width: 220px;
+  object-fit: contain;
+  margin-right: 20px;
+  margin-top: 0px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .signin-btn {
