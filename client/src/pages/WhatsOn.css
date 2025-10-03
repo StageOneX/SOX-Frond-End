@@ -28,7 +28,7 @@
   top: -50%;
   left: -50%;
   width: 200%;
-  height: 200%;
+  height: 100%;
   z-index: -1;
   /* Complex gradient that moves with the mouse */
   background: radial-gradient(

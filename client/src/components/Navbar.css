@@ -38,12 +38,13 @@
 
 .navbar-logo img {
   height: 140px;
-  width: 220px;
+  width: 150px;
   object-fit: contain;
   margin-right: 20px;
   margin-top: 0px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  padding: -200px;
 }
 
 .signin-btn {
