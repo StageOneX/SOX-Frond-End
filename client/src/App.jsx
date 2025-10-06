@@ -7,6 +7,7 @@ import Events from "./pages/Events";
 import Tickets from "./pages/Tickets";
 import WhatsOn from "./pages/WhatsOn";
 import Login from "./pages/Login";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/Tickets" element={<Tickets />} />
           <Route path="/WhatsOn" element={<WhatsOn />} />
           <Route path="/Login" element={<Login />} /> 
+          <Route path="/Contact" element={<ContactUs />} /> 
       
         </Routes>
       </Router>

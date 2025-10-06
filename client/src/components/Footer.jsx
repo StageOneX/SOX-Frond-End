@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom"> 
-        <p>© 2025 Copyright by StageOneX. All rights reserved.</p>
+        <p>© 2025 Copyright by Stage OneX. All rights reserved.</p>
       </div>
     </footer>
   );
