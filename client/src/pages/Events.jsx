@@ -95,6 +95,21 @@ const Events = () => {
               </div>
             ))}
         </div>
+
+        {/* Upcoming Events */}
+        <h2>Past Events</h2>
+        <div className="events-grid">
+          {events
+            .filter((event) => event.status === "Ongoing")
+            .map((event) => (
+              <div key={event.id} className="event-card">
+                <img src={event.image} alt={event.title} />
+                <h3>{event.title}</h3>
+                <p>{event.date}</p>
+                <span>{event.price}</span>
+              </div>
+            ))}
+        </div>
       </section>
 
       <Footer />
