@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="navbar-logo">
           <h2>
-            <Link to="/Home"><img src="/images/logo.png" /></Link>
+            <Link to="/Home"><img src="/images/logo.png" /></Link> 
           </h2>
         </div>
 
