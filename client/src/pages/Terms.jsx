@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -81,7 +82,13 @@ const Terms = () => {
           </p>
         </div>
       </section>
+
+      
+      
+
+      <Footer/>
     </div>
+      
   );
 };
 

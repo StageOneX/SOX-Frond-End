@@ -19,7 +19,7 @@ body {
 
 /* === Terms Page Layout === */
 .terms-page {
-  min-height: 100vh;
+  min-height: 1000vh;
   
   padding: 0px 10px;
   display: flex;
