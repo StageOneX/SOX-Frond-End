@@ -1,20 +1,22 @@
+/* === Page Background === */
 .past-events-page {
   position: relative;
   min-height: 100vh;
   background: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%),
-    rgba(59, 130, 246, 0.3),
+    rgba(59, 130, 246, 0.25),
     #0d0d2b 80%
   );
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px 60px 20px;
+  justify-content: flex-start;
+  padding: 120px 20px 80px 20px;
   color: #fff;
   overflow: hidden;
 }
 
-/* Mouse follow bubble */
+/* === Mouse-follow Light Bubble === */
 .light-overlay {
   position: absolute;
   top: 0;
@@ -33,32 +35,35 @@
   z-index: 1;
 }
 
+/* === Section Title === */
 .past-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 800;
   color: #3b82f6;
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+  text-align: center;
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.7);
+  margin-bottom: 50px;
   z-index: 2;
 }
 
+/* === Event Card Grid Layout === */
 .past-events-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  width: 100%;
+  max-width: 1200px;
   z-index: 2;
 }
 
+/* === Individual Event Card === */
 .past-card {
   background: rgba(17, 24, 39, 0.9);
-  border: 2px solid rgba(59, 130, 246, 0.5);
+  border: 2px solid rgba(59, 130, 246, 0.4);
   border-radius: 16px;
-  width: 300px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
   cursor: pointer;
 }
 
@@ -71,26 +76,40 @@
   width: 100%;
   height: 180px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .past-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
+/* === Card Info === */
 .past-info {
   padding: 20px;
   text-align: center;
+  color: #fff;
 }
 
 .past-info h3 {
   font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-weight: 600;
+  margin-bottom: 6px;
   color: #ffffff;
 }
 
 .past-info p {
+  font-size: 0.95rem;
   color: #a5b4fc;
   font-weight: 500;
-  font-size: 0.9rem;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  .past-title {
+    font-size: 2rem;
+  }
+
+  .past-card img {
+    height: 160px;
+  }
 }

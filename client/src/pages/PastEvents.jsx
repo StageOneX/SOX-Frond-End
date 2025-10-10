@@ -10,17 +10,17 @@ const PastEvents = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  // Mouse light bubble follow effect
   useEffect(() => {
-  const page = document.querySelector(".Past-Events-page");
-  const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    page.style.setProperty("--x", `${clientX}px`);
-    page.style.setProperty("--y", `${clientY}px`);
-  };
-  window.addEventListener("mousemove", handleMouseMove);
-  return () => window.removeEventListener("mousemove", handleMouseMove);
-}, []);
-
+    const page = document.querySelector(".past-events-page");
+    const handleMouseMove = (e) => {
+      const { clientX, clientY } = e;
+      page.style.setProperty("--x", `${clientX}px`);
+      page.style.setProperty("--y", `${clientY}px`);
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   const pastEvents = [
     {
@@ -41,6 +41,18 @@ const PastEvents = () => {
       date: "20th - 23rd OCT 2023",
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     },
+    {
+      id: 4,
+      title: "Wayamba Cultural Night 2022",
+      date: "02nd SEP 2022",
+      image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    },
+    {
+      id: 5,
+      title: "Startup Launchpad 2021",
+      date: "10th DEC 2021",
+      image: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51",
+    },
   ];
 
   return (
@@ -48,7 +60,10 @@ const PastEvents = () => {
       <Navbar />
       <div className="past-events-page">
         <div className="light-overlay"></div>
-        <h2 className="past-title" data-aos="fade-down">PAST EVENTS</h2>
+
+        <h2 className="past-title" data-aos="fade-down">
+          PAST EVENTS
+        </h2>
 
         <div className="past-events-container">
           {pastEvents.map((event) => (

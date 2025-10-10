@@ -43,7 +43,7 @@
   width: 100%;
   max-width: 600px;
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-  backdrop-filter: blur(10px);
+
   z-index: 2;
 }
 
