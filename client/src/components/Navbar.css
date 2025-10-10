@@ -11,7 +11,7 @@
   );
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  padding: 12px 0;
+  padding: 19px ;
   z-index: 1000;
   transition: background 0.1s ease-out;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -30,7 +30,7 @@
 
 .navbar-links{
   display: flex;
-  gap: 25px;
+  gap: 60px;
   align-items: center;
   font-weight: 500;
   font-size: 1rem;
@@ -39,7 +39,7 @@
 .navbar-logo img {
   height: 140px;
   width: 150px;
-  object-fit: contain;
+  object-fit: left;
   margin-right: 20px;
   margin-top: 0px;
   cursor: pointer;
