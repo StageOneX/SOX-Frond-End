@@ -7,6 +7,9 @@ import Events from "./pages/Events";
 import Tickets from "./pages/Tickets";
 import WhatsOn from "./pages/WhatsOn";
 import Login from "./pages/Login";
+import ContactUs from "./pages/ContactUs";
+import PastEvents from "./pages/PastEvents";
+import Terms from "./pages/Terms";
 
 const App = () => {
   return (
@@ -21,6 +24,11 @@ const App = () => {
           <Route path="/Tickets" element={<Tickets />} />
           <Route path="/WhatsOn" element={<WhatsOn />} />
           <Route path="/Login" element={<Login />} /> 
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/PastEvents" element={<PastEvents />} />
+          <Route path="/Terms" element={<Terms />} />
+        
+       
       
         </Routes>
       </Router>

@@ -1,0 +1,76 @@
+/* === Light-following background effect === */
+:root {
+  --x: 50%;
+  --y: 50%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    rgba(0, 123, 255, 0.25),
+    rgba(15, 15, 15, 0.95) 100%
+  );
+  color: #fff;
+  transition: background 0.2s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Terms Page Layout === */
+.terms-page {
+  min-height: 100vh;
+  
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terms-section {
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.05);
+ 
+  border-radius: 16px;
+  padding: 50px 50px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.terms-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.terms-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.terms-container h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  color: #00aaff;
+}
+
+.terms-container p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .terms-section {
+    padding: 25px 20px;
+  }
+
+  .terms-title {
+    font-size: 2rem;
+  }
+}
