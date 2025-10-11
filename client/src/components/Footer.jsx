@@ -32,7 +32,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <p>No.10, Spring Field, Kurunegala, 20200</p>
           <p>+94 764456329</p>
-          <p>stageonex.info@gmail.com</p>
+          <p><Link to="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDnFlsdwgvCvpdBbJZmPrSDXTrmNPsHMLkNHmbDzBXtSBXBvjvhrHhlMRMfksxsfdKfhcfL">stageonex.info@gmail.com</Link></p>
           <p>Mon-Fri 9:00 - 17:00</p>
         </div>
 
