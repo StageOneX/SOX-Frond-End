@@ -18,7 +18,7 @@
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   position: relative; /* Essential for containing the background effect */
-  perspective: 1000px; /* Essential for 3D depth illusion */
+  perspective: 100px; /* Essential for 3D depth illusion */
 }
 
 /* 2. The Dynamic Background Layer (The "Experience") */

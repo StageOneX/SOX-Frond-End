@@ -2,25 +2,30 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./PastEvents.css";
-import AOS from "aos";
+import AOS from "aos";  
 import "aos/dist/aos.css";
+import { use } from "react";
 
 const PastEvents = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+  
 
   // Mouse light bubble follow effect
   useEffect(() => {
-    const page = document.querySelector(".past-events-page");
-    const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
-      page.style.setProperty("--x", `${clientX}px`);
-      page.style.setProperty("--y", `${clientY}px`);
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+    // Initialize AOS animations
+          AOS.init({ duration: 1000, once: true });
+      
+          // Handle mouse light movement
+          const handleMouseMove = (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            document.documentElement.style.setProperty("--x", `${x}%`);
+            document.documentElement.style.setProperty("--y", `${y}%`);
+          };
+      
+          window.addEventListener("mousemove", handleMouseMove);
+          return () => window.removeEventListener("mousemove", handleMouseMove);
+        }, []);
+    
 
   const pastEvents = [
     {
@@ -83,3 +88,6 @@ const PastEvents = () => {
 };
 
 export default PastEvents;
+
+
+
