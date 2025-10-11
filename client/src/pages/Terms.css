@@ -20,7 +20,6 @@ body {
 
 /* === Terms Page Layout === */
 .terms-page {
-<<<<<<< HEAD
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,11 +28,6 @@ body {
 /* === Terms Section === */
 .terms-section {
   flex: 1;
-=======
-  min-height: 100gqq1                 vh;
-  
-  padding: 0px 10px;
->>>>>>> dbcd38100df9a7e4552211159a784bc73137c212
   display: flex;
   flex-direction: column;
   align-items: center;
