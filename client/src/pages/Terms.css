@@ -8,9 +8,9 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(
-    circle at var(--x) var(--y),
-    rgba(0, 123, 255, 0.25),
-    rgba(15, 15, 15, 0.95) 100%
+     circle at var(--x, 50%) var(--y, 50%),
+    rgba(3, 15, 40, 0.1) 0%,
+    rgb(11, 43, 107) 80%
   );
   color: #fff;
   transition: background 0.2s ease;
@@ -20,7 +20,6 @@ body {
 
 /* === Terms Page Layout === */
 .terms-page {
-<<<<<<< HEAD
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,11 +28,6 @@ body {
 /* === Terms Section === */
 .terms-section {
   flex: 1;
-=======
-  min-height: 100gqq1                 vh;
-  
-  padding: 0px 10px;
->>>>>>> dbcd38100df9a7e4552211159a784bc73137c212
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,3 +100,13 @@ footer a:hover {
     font-size: 2rem;
   }
 }
+
+[data-aos] {
+  transition-property: transform, opacity !important;
+  transition-timing-function: ease-out !important;
+}
+[data-aos][data-aos][data-aos][data-aos][data-aos][data-aos] {
+  transition-duration: 0.8s !important;
+}   [data-aos][data-aos][data-aos][data-aos][data-aos] {
+  transition-duration: 0.6s !important;
+}         
