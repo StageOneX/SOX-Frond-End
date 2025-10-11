@@ -15,24 +15,29 @@ body {
   color: #fff;
   transition: background 0.2s ease;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 /* === Terms Page Layout === */
 .terms-page {
-  min-height: 1000vh;
-  
-  padding: 0px 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Terms Section === */
+.terms-section {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.terms-section {
+  justify-content: flex-start;
   max-width: 1000px;
+  width: 90%;
+  margin: 100px auto 50px auto;
   background: rgba(255, 255, 255, 0.05);
- 
   border-radius: 16px;
-  padding: 50px 50px;
+  padding: 50px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
@@ -48,7 +53,7 @@ body {
   text-align: center;
   font-size: 1.1rem;
   color: #ccc;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .terms-container h2 {
@@ -64,6 +69,27 @@ body {
   margin-top: 10px;
 }
 
+/* === Footer Styling === */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+footer a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #06b6d4;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .terms-section {
@@ -74,5 +100,3 @@ body {
     font-size: 2rem;
   }
 }
-
-
