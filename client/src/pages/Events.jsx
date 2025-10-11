@@ -2,6 +2,10 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./Events.css";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Events = () => {
@@ -57,6 +61,23 @@ const Events = () => {
     },
     
   ];
+
+  useEffect(() => {
+        // Initialize AOS animations
+        AOS.init({ duration: 1000, once: true });
+    
+        // Handle mouse light movement
+        const handleMouseMove = (e) => {
+          const x = (e.clientX / window.innerWidth) * 100;
+          const y = (e.clientY / window.innerHeight) * 100;
+          document.documentElement.style.setProperty("--x", `${x}%`);
+          document.documentElement.style.setProperty("--y", `${y}%`);
+        };
+    
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+      }, []);
+  
 
   return (
     <div className="events-page">
