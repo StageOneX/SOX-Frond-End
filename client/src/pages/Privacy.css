@@ -1,0 +1,105 @@
+
+
+.privacy-page {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(3, 15, 40, 0.1) 0%,
+    rgb(11, 43, 107) 80%
+  );
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  transition: background 0.5s ease;
+  align-items: center;
+}
+
+/* Section Layout */
+.privacy-section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+/* Title Styling */
+.privacy-title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #60a5fa, #3b82f6, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Subtitle Styling */
+.privacy-subtitle {
+  font-size: 1.2rem;
+  color: #d1d5db;
+  margin-bottom: 50px;
+}
+
+/* Content Container */
+.privacy-container {
+  background: rgba(31, 41, 55, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: left;
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+}
+
+.privacy-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.35);
+}
+
+/* Headings inside the container */
+.privacy-container h2 {
+  color: #93c5fd;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-left: 4px solid #3b82f6;
+  padding-left: 10px;
+}
+
+/* Paragraphs */
+.privacy-container p {
+  color: #e5e7eb;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-section {
+    padding: 80px 5%;
+  }
+
+  .privacy-title {
+    font-size: 2.2rem;
+  }
+
+  .privacy-container {
+    padding: 30px 20px;
+  }
+
+  .privacy-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .privacy-container p {
+    font-size: 0.95rem;
+  }
+}
+
+
+[data-aos] {
+  transition-property: transform, opacity !important;
+  transition-timing-function: ease-out !important;
+}
