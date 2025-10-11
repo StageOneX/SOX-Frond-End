@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "./PastEvents.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./PastEvents.css";
 
 const PastEvents = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  // Mouse light bubble follow effect
+  // Mouse-following light effect
   useEffect(() => {
-    const page = document.querySelector(".past-events-page");
     const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
-      page.style.setProperty("--x", `${clientX}px`);
-      page.style.setProperty("--y", `${clientY}px`);
+      const root = document.documentElement;
+      root.style.setProperty("--x", `${e.clientX}px`);
+      root.style.setProperty("--y", `${e.clientY}px`);
     };
+
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
@@ -59,22 +59,22 @@ const PastEvents = () => {
     <>
       <Navbar />
       <div className="past-events-page">
-        <div className="light-overlay"></div>
+        <div className="content-container">
+          <h2 className="past-title" data-aos="fade-down">
+            PAST EVENTS
+          </h2>
 
-        <h2 className="past-title" data-aos="fade-down">
-          PAST EVENTS
-        </h2>
-
-        <div className="past-events-container">
-          {pastEvents.map((event) => (
-            <div className="past-card" key={event.id} data-aos="zoom-in">
-              <img src={event.image} alt={event.title} />
-              <div className="past-info">
-                <h3>{event.title}</h3>
-                <p>{event.date}</p>
+          <div className="past-events-container">
+            {pastEvents.map((event) => (
+              <div className="past-card" key={event.id} data-aos="zoom-in">
+                <img src={event.image} alt={event.title} />
+                <div className="past-info">
+                  <h3>{event.title}</h3>
+                  <p>{event.date}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       <Footer />
