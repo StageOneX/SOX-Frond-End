@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 const PastEvents = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 100000 });
   }, []);
 
   // Mouse-following light effect>
@@ -25,7 +25,7 @@ const PastEvents = () => {
 
   useEffect(() => {
           // Initialize AOS animations
-          AOS.init({ duration: 1000, once: true });
+          AOS.init({ duration: 1000, once: true }); 
       
           // Handle mouse light movement
           const handleMouseMove = (e) => {
