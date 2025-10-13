@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./PastEvents.css";
@@ -6,9 +6,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const PastEvents = () => {
-  
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
-  // Mouse-following light effect
+  // Mouse-following light effect>
   useEffect(() => {
     const page = document.querySelector(".past-events-page");
     const handleMouseMove = (e) => {
@@ -18,7 +20,25 @@ const PastEvents = () => {
     };
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
+  
   }, []);
+
+  useEffect(() => {
+          // Initialize AOS animations
+          AOS.init({ duration: 1000, once: true });
+      
+          // Handle mouse light movement
+          const handleMouseMove = (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            document.documentElement.style.setProperty("--x", `${x}%`);
+            document.documentElement.style.setProperty("--y", `${y}%`);
+          };
+      
+          window.addEventListener("mousemove", handleMouseMove);
+          return () => window.removeEventListener("mousemove", handleMouseMove);
+        }, []);
+    
 
   const pastEvents = [
     {
@@ -52,6 +72,8 @@ const PastEvents = () => {
       image: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51",
     },
   ];
+
+   
 
   return (
     <>
